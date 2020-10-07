@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/math120calc_binomial/precache-manifest.4087329d9a3115873590c906f79c0452.js"
+  "/math120calc_binomial/precache-manifest.806d16fd71c3974ddec7a28a421b6952.js"
 );
 
 self.addEventListener('message', (event) => {
