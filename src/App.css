@@ -1,0 +1,33 @@
+.header {
+  text-align: center;
+}
+
+.card-subtext {
+  font-size: 14px;
+}
+
+.list-group-item {
+  padding: .5rem 1.25rem !important;
+  display: table-row !important;
+}
+
+
+.lg-cell {
+  display: table-cell;
+  padding: .5rem .5rem !important;
+}
+
+.lg-right {
+  text-align: right;
+}
+
+.calc-title {
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+  padding: 2rem 2rem;
+}
+
+.bottom-credit {
+  font-size: 14px;
+}
