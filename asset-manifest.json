@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/math120calc_binomial/static/css/main.2db2f01c.chunk.css",
+    "main.js": "/math120calc_binomial/static/js/main.9c904ad2.chunk.js",
+    "main.js.map": "/math120calc_binomial/static/js/main.9c904ad2.chunk.js.map",
+    "runtime-main.js": "/math120calc_binomial/static/js/runtime-main.cac77516.js",
+    "runtime-main.js.map": "/math120calc_binomial/static/js/runtime-main.cac77516.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/math120calc_binomial/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.d40c33c2.chunk.js": "/math120calc_binomial/static/js/2.d40c33c2.chunk.js",
+    "static/js/2.d40c33c2.chunk.js.map": "/math120calc_binomial/static/js/2.d40c33c2.chunk.js.map",
+    "index.html": "/math120calc_binomial/index.html",
+    "precache-manifest.4087329d9a3115873590c906f79c0452.js": "/math120calc_binomial/precache-manifest.4087329d9a3115873590c906f79c0452.js",
+    "service-worker.js": "/math120calc_binomial/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/math120calc_binomial/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.2db2f01c.chunk.css.map": "/math120calc_binomial/static/css/main.2db2f01c.chunk.css.map",
+    "static/js/2.d40c33c2.chunk.js.LICENSE.txt": "/math120calc_binomial/static/js/2.d40c33c2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cac77516.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.d40c33c2.chunk.js",
+    "static/css/main.2db2f01c.chunk.css",
+    "static/js/main.9c904ad2.chunk.js"
+  ]
+}
