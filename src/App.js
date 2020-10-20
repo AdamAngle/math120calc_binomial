@@ -108,7 +108,7 @@ function App() {
         <div className="calc-title">
           <h3 className="header">Math-120 Binomial Distribution Calculator</h3>
         </div>
-        <Form style={{ 'fontSize': '14px' }}>
+        <Form style={{ 'fontSize': '14px' }} onSubmit={Calculate}>
           <Form.Row>
             <Col md={3}>
               <Form.Group controlId="calcvar_p">
@@ -139,7 +139,7 @@ function App() {
             <Col sm={4}>
               <ButtonGroup style={{ width: '100%' }}>
                 <Button variant="secondary" onClick={Clear} tabIndex={6}>Clear</Button>
-                <Button variant="primary" block onClick={Calculate} tabIndex={5}><strong>Calculate</strong></Button>
+                <Button variant="primary" type="submit" block tabIndex={5}><strong>Calculate</strong></Button>
               </ButtonGroup>
             </Col>
           </Row>
