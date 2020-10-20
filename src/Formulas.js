@@ -1,16 +1,19 @@
-var bigdecimal = require("bigdecimal");
+import Big from 'big.js';
 
 // Math-120 Formula Solver by Adam Angle
 
-function factorial(n) { 
-  var ans=1; 
-  for (var i = 2; i <= n; i++) 
-    ans = ans * i; 
-  return ans; 
-} 
+// Memoization-based factorial with Big, because 300! is huge!
+var f = [];
+function factorial (n) {
+  if (n === 0 || n === 1)
+    return Big(1);
+  if (f[n] > 0)
+    return f[n];
+  return f[n] = factorial(n-1).times(n);
+}
 
 function calcNChooseX(n, x) {
-  return factorial(n) / (factorial(x) * factorial(n - x));
+  return factorial(n).div(factorial(x).times(factorial(n - x)));
 }
 
 function betweenList(lowEnd, highEnd) {
@@ -22,18 +25,19 @@ function betweenList(lowEnd, highEnd) {
 }
 
 function calcBinomialProbDist(n, p, x1, x2) {
-  let bd_p = new bigdecimal.BigDecimal(p);
+  let bd_p = new Big(p);
   
-  let sepBase = new bigdecimal.BigDecimal(1.0);
-  var cmulTotal = new bigdecimal.BigDecimal(0.0);
+  let sepBase = new Big(1.0);
+  var cmulTotal = new Big(0.0);
   let numbers = betweenList(Math.min(x1, x2), Math.max(x1, x2));
 
+
   for (const num of numbers) {
-    let nCx = new bigdecimal.BigDecimal(calcNChooseX(n, num));
-    cmulTotal = cmulTotal.add(nCx.multiply(bd_p.pow(num)).multiply(sepBase.subtract(bd_p).pow(n - num)));
+    let nCx = new Big(calcNChooseX(n, num));
+    cmulTotal = cmulTotal.add(nCx.times(bd_p.pow(num)).times(sepBase.minus(bd_p).pow(n - num)));
   }
-  var roundingMode = bigdecimal.BigDecimal.ROUND_HALF_UP;
-  return cmulTotal.setScale(18, roundingMode).stripTrailingZeros().toPlainString();
+  Big.RM = 1;
+  return cmulTotal.toFixed(18).replace(/(\.0+|0+)$/, '');
 }
 
 export default function statCalc(n, p, x1, x2) {
