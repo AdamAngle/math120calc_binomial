@@ -1,6 +1,6 @@
 {
   "name": "math120calc_binomial",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "homepage": "https://adamangle.github.io/math120calc_binomial",
   "dependencies": {
